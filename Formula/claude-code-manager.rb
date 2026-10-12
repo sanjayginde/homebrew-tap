@@ -1,5 +1,5 @@
 # Updated automatically by claude-code-manager's release workflow.
-class Ccm < Formula
+class ClaudeCodeManager < Formula
   desc "Terminal UI for browsing, managing, and resuming Claude Code sessions"
   homepage "https://github.com/sanjayginde/claude-code-manager"
   url "https://github.com/sanjayginde/claude-code-manager/archive/refs/tags/v0.1.2.tar.gz"
@@ -8,6 +8,8 @@ class Ccm < Formula
   head "https://github.com/sanjayginde/claude-code-manager.git", branch: "main"
 
   depends_on "rust" => :build
+
+  conflicts_with "ccm", because: "both install a `ccm` binary"
 
   def install
     system "cargo", "install", *std_cargo_args
