@@ -1,12 +1,14 @@
 # sanjayginde/homebrew-tap
 
-Homebrew casks for [Glimpse](https://github.com/sanjayginde/glimpse).
+Homebrew formulae and casks for my projects.
 
-```bash
-brew install --cask sanjayginde/tap/glimpse
-```
+| Name | Install | Description |
+|------|---------|-------------|
+| [ccm](https://github.com/sanjayginde/claude-code-manager) | `brew install sanjayginde/tap/ccm` | Terminal UI for browsing, managing, and resuming Claude Code sessions |
+| [Glimpse](https://github.com/sanjayginde/glimpse) | `brew install --cask sanjayginde/tap/glimpse` | Menu bar monthly calendar |
 
-`Casks/glimpse.rb` is updated automatically by Glimpse's release workflow.
+`Formula/ccm.rb` and `Casks/glimpse.rb` are updated automatically by each
+project's release workflow.
 
 > Glimpse is ad-hoc signed (not notarized). The cask strips the quarantine
 > attribute after install so Gatekeeper allows it to launch.
