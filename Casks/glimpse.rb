@@ -17,11 +17,6 @@ cask "glimpse" do
 
   app "Glimpse.app"
 
-  # Glimpse is ad-hoc signed, not notarized; clear quarantine so Gatekeeper allows launch
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Glimpse.app"]
-  end
-
   uninstall quit: "dev.sanjayginde.glimpse"
 
   zap trash: "~/Library/Preferences/dev.sanjayginde.glimpse.plist"
