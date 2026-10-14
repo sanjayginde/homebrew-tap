@@ -9,6 +9,3 @@ Homebrew formulae and casks for my projects.
 
 `Formula/claude-code-manager.rb` and `Casks/glimpse.rb` are updated automatically by each
 project's release workflow.
-
-> Glimpse is ad-hoc signed (not notarized). The cask strips the quarantine
-> attribute after install so Gatekeeper allows it to launch.
