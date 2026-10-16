@@ -2,8 +2,8 @@
 class ClaudeCodeManager < Formula
   desc "Terminal UI for browsing, managing, and resuming Claude Code sessions"
   homepage "https://github.com/sanjayginde/claude-code-manager"
-  url "https://github.com/sanjayginde/claude-code-manager/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "1f49bad120ebcc92d2fba8fba336c3db198be21cbfd9d29f38928ad22435aa42"
+  url "https://github.com/sanjayginde/claude-code-manager/archive/refs/tags/v0.1.5.tar.gz"
+  sha256 "d6ebab3c6967c06c14860a503e4ba682f4d4fc5fcce8e9fe33e46f39abedfb1e"
   license "MIT"
   head "https://github.com/sanjayginde/claude-code-manager.git", branch: "main"
 
